@@ -75,3 +75,7 @@ print("Total da compra: R$ {:.2f}".format(total))
 print("Você comprou {} produtos no valor total de R$ {:.2f}.".format(quantidade_total, total)) 
 print("O endereço de entrega é: {}.".format(endereco_entrega))
 print("\n Obrigado pela compra!")
+
+
+
+
