@@ -1,12 +1,5 @@
 # RM 97819 
 
-from zipfile import ZipFile
-
-with ZipFile("arquivo_compactado.zip", "w") as zip:
-    zip.write("arquivo1.txt")  # Escrevendo o arquivo1.txt no arquivo_compactado.zip.
-    zip.write("arquivo2.txt")  # Escrevendo o arquivo2.txt no arquivo_compactado.zip.
-
-
 print("Bem-vindo(a) à Vinheira Agnello!!")
 print("Para continuar realize um breve cadastro, por favor!!")
 
