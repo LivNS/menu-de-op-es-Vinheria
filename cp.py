@@ -43,15 +43,21 @@ else:
      compras[vinho]["quantidade"] = quantidade
      quantidade_total += quantidade
 
+
 #Finalizando a compra 
     print("\n Resumo da sua compra:")
-total = 0
+    total = 0
 for vinho, info in compras.items():
      quantidade = info["quantidade"]
      preco_unitario = catalogo_vinhos[vinho]
      preco_total = preco_unitario * quantidade
      total += preco_total
 print(vinho, "- {} unidades - R$ {:.2f}".format(quantidade, preco_total))
+
+if preco_total < 100:
+    print("Desculpe, o valor mínimo para a compra ser realizada é de R$100,00")
+    exit()
+
 
 #caso a compra seja menor que 200 reais o frete sera cobrado
 if total < VALOR_MINIMO:
