@@ -12,7 +12,7 @@ idade = int(input("Digite sua idade: "))
 # se o comprador for menor de idade sua compra será negada
 if idade < 18:
     print("Desculpe, para continuar é necessário que você seja maior de idade.")
-    break
+    
     exit()
 
 else:
